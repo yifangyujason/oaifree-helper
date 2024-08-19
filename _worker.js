@@ -133,7 +133,7 @@ async function handleRequest(request) {
   const voiceURL = await KV.get('VoiceURL');
   const admin = await KV.get('Admin');
   const chatlogourl = await KV.get('ChatLogoURL') || await KV.get('LogoURL') || logo;
-  const chatusername = await KV.get('ChatUserName') || 'Haibara AI';
+  const chatusername = await KV.get('ChatUserName') || 'jasonYu AI';
   const chatmail = await KV.get('ChatMail') || 'Power by Pandora';
   const apiKey = await KV.get('ModerationApiKey');
    const cookies = request.headers.get('Cookie');
@@ -1771,7 +1771,7 @@ async function generateRegisterResponse(message) {
 async function getRegisterHTML() {
   const WorkerURL=await KV.get('WorkerURL');
   const turnstileSiteKey=await KV.get('TurnstileSiteKey');
-  const websiteName = await KV.get('WebName') || 'Haibara AI';
+  const websiteName = await KV.get('WebName') || 'jasonYu AI';
   const logourl = await KV.get('LogoURL') || logo;
   const removeTurnstile = await KV.get('RemoveTurnstile')||'';
   return `
@@ -3209,7 +3209,7 @@ async function getAliveAccountOptions() {
 async function getLoginHTML(setan) {
   const WorkerURL=await KV.get('WorkerURL');
   const turnstileSiteKey=await KV.get('TurnstileSiteKey');
-  const websiteName = await KV.get('WebName') || 'Haibara AI';
+  const websiteName = await KV.get('WebName') || 'jasonYu AI';
   const logourl = await KV.get('LogoURL') || logo;
   const removeTurnstile = await KV.get('RemoveTurnstile')||'';
    const commonHTML = `
