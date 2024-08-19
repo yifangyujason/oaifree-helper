@@ -13,12 +13,12 @@ on:
           - prod
       commit:
         description: 'Git commit to deploy'
-        default: 'main'
+        default: 'patch-1'
         required: true
 
   push:
     branches:
-      - "main"
+      - "patch-1"
   repository_dispatch:
 
 env:
